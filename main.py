@@ -20,7 +20,6 @@
 # an Authorization header.
 import sys, os, base64, datetime, hashlib, hmac 
 import requests # pip install requests
-from dotenv import load_dotenv
 
 # ************* REQUEST VALUES *************
 method = 'POST'
@@ -37,7 +36,7 @@ content_type = 'application/json'
 
 # Request parameters for CreateTable--passed in a JSON block.
 request_parameters =  '{'
-request_parameters +=  '"new_ip": "10.100.100.50",'
+request_parameters +=  '"new_ip": "10.100.100.150",'
 request_parameters +=  '"a_register": "casa.prata.cloud"'
 request_parameters +=  '}'
 
